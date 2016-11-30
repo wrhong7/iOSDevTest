@@ -14,6 +14,7 @@
 		F1FDB8C91DDD428900DE46E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FDB8C71DDD428900DE46E1 /* LaunchScreen.storyboard */; };
 		F1FDB8D41DDD428900DE46E1 /* complexTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FDB8D31DDD428900DE46E1 /* complexTinderTests.swift */; };
 		F1FDB8DF1DDD428900DE46E1 /* complexTinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FDB8DE1DDD428900DE46E1 /* complexTinderUITests.swift */; };
+		F1FDB8ED1DDD42D500DE46E1 /* 299320_10150349948518623_168051_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1FDB8EC1DDD42D500DE46E1 /* 299320_10150349948518623_168051_n.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F1FDB8DA1DDD428900DE46E1 /* complexTinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = complexTinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1FDB8DE1DDD428900DE46E1 /* complexTinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = complexTinderUITests.swift; sourceTree = "<group>"; };
 		F1FDB8E01DDD428900DE46E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1FDB8EC1DDD42D500DE46E1 /* 299320_10150349948518623_168051_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 299320_10150349948518623_168051_n.jpg; path = ../../Desktop/299320_10150349948518623_168051_n.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		F1FDB8B21DDD428900DE46E1 = {
 			isa = PBXGroup;
 			children = (
+				F1FDB8EC1DDD42D500DE46E1 /* 299320_10150349948518623_168051_n.jpg */,
 				F1FDB8BD1DDD428900DE46E1 /* complexTinder */,
 				F1FDB8D21DDD428900DE46E1 /* complexTinderTests */,
 				F1FDB8DD1DDD428900DE46E1 /* complexTinderUITests */,
@@ -234,6 +237,7 @@
 			files = (
 				F1FDB8C91DDD428900DE46E1 /* LaunchScreen.storyboard in Resources */,
 				F1FDB8C61DDD428900DE46E1 /* Assets.xcassets in Resources */,
+				F1FDB8ED1DDD42D500DE46E1 /* 299320_10150349948518623_168051_n.jpg in Resources */,
 				F1FDB8C41DDD428900DE46E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

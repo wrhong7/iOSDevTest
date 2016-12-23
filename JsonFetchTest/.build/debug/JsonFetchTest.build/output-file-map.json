@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTest.build/master.swiftdeps"
+  },
+  "/Users/rh/iOsDev/JsonFetchTest/Sources/JsonFetchTest.swift": {
+    "dependencies": "/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTest.build/JsonFetchTest.d",
+    "object": "/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTest.build/JsonFetchTest.swift.o",
+    "swiftmodule": "/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTest.build/JsonFetchTest~partial.swiftmodule",
+    "swift-dependencies": "/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTest.build/JsonFetchTest.swiftdeps"
+  }
+}

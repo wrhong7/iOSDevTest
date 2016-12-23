@@ -1,0 +1,63 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["<SwiftyJSON.module>","<JsonFetchTest.module>","<JsonFetchTestTests.module>","<JsonFetchTestPackageTests.test>"]
+  "main": ["<SwiftyJSON.module>","<JsonFetchTest.module>"]
+default: "main"
+commands: 
+  "<SwiftyJSON.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "SwiftyJSON"
+    module-output-path: "/Users/rh/iOsDev/JsonFetchTest/.build/debug/SwiftyJSON.swiftmodule"
+    inputs: []
+    outputs: ["<SwiftyJSON.module>","/Users/rh/iOsDev/JsonFetchTest/.build/debug/SwiftyJSON.build/SwiftyJSON.swift.o"]
+    import-paths: ["/Users/rh/iOsDev/JsonFetchTest/.build/debug"]
+    temps-path: "/Users/rh/iOsDev/JsonFetchTest/.build/debug/SwiftyJSON.build"
+    objects: ["/Users/rh/iOsDev/JsonFetchTest/.build/debug/SwiftyJSON.build/SwiftyJSON.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-module-cache-path","/Users/rh/iOsDev/JsonFetchTest/.build/debug/ModuleCache"]
+    sources: ["/Users/rh/iOsDev/JsonFetchTest/Packages/SwiftyJSON-3.1.3/Source/SwiftyJSON.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<JsonFetchTest.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "JsonFetchTest"
+    module-output-path: "/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTest.swiftmodule"
+    inputs: ["<SwiftyJSON.module>"]
+    outputs: ["<JsonFetchTest.module>","/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTest.build/JsonFetchTest.swift.o"]
+    import-paths: ["/Users/rh/iOsDev/JsonFetchTest/.build/debug"]
+    temps-path: "/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTest.build"
+    objects: ["/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTest.build/JsonFetchTest.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-module-cache-path","/Users/rh/iOsDev/JsonFetchTest/.build/debug/ModuleCache"]
+    sources: ["/Users/rh/iOsDev/JsonFetchTest/Sources/JsonFetchTest.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<JsonFetchTestTests.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "JsonFetchTestTests"
+    module-output-path: "/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTestTests.swiftmodule"
+    inputs: ["<SwiftyJSON.module>","<JsonFetchTest.module>"]
+    outputs: ["<JsonFetchTestTests.module>","/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTestTests.build/JsonFetchTestTests.swift.o"]
+    import-paths: ["/Users/rh/iOsDev/JsonFetchTest/.build/debug"]
+    temps-path: "/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTestTests.build"
+    objects: ["/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTestTests.build/JsonFetchTestTests.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-module-cache-path","/Users/rh/iOsDev/JsonFetchTest/.build/debug/ModuleCache"]
+    sources: ["/Users/rh/iOsDev/JsonFetchTest/Tests/JsonFetchTestTests/JsonFetchTestTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<JsonFetchTestPackageTests.test>":
+    tool: shell
+    description: "Linking ./.build/debug/JsonFetchTestPackageTests.xctest/Contents/MacOS/JsonFetchTestPackageTests"
+    inputs: ["/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTestTests.build/JsonFetchTestTests.swift.o","/Users/rh/iOsDev/JsonFetchTest/.build/debug/SwiftyJSON.build/SwiftyJSON.swift.o","/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTest.build/JsonFetchTest.swift.o"]
+    outputs: ["<JsonFetchTestPackageTests.test>","/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTestPackageTests.xctest/Contents/MacOS/JsonFetchTestPackageTests"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-g","-L/Users/rh/iOsDev/JsonFetchTest/.build/debug","-o","/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTestPackageTests.xctest/Contents/MacOS/JsonFetchTestPackageTests","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-module-name","JsonFetchTestPackageTests","-Xlinker","-bundle","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTestTests.build/JsonFetchTestTests.swift.o","/Users/rh/iOsDev/JsonFetchTest/.build/debug/SwiftyJSON.build/SwiftyJSON.swift.o","/Users/rh/iOsDev/JsonFetchTest/.build/debug/JsonFetchTest.build/JsonFetchTest.swift.o"]
+

@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "0eeeb21ca50e86546c04be08e9a034af"
+build_time: [535427764, 799833000]
+inputs:
+  "/Users/rh/iOsDev/JsonFetchTest/Packages/SwiftyJSON-3.1.3/Source/SwiftyJSON.swift": [535427764, 0]
